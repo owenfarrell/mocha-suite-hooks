@@ -1,0 +1,26 @@
+{
+  "name": "mocha-suite-hooks",
+  "version": "0.0.1",
+  "description": "Suite-level hooks for Mocha",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owenfarrell/mocha-suite-hooks.git"
+  },
+  "keywords": [
+    "mocha",
+    "hooks",
+    "test",
+    "bdd"
+  ],
+  "author": "Owen Farrell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/owenfarrell/mocha-suite-hooks/issues"
+  },
+  "homepage": "https://github.com/owenfarrell/mocha-suite-hooks#readme",
+  "devDependencies": {
+    "mocha": "^8.0.1"
+  }
+}
