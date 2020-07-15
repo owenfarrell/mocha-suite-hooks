@@ -1,0 +1,9 @@
+# Ignore Everything
+*
+*/**
+# Whitelist Distribution Contents
+!CHANGELOG.md
+!LICENSE
+!README.md
+!src/**
+!package.json
