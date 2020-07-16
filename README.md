@@ -2,6 +2,10 @@
 
 Sometimes, `before()` isn't enough and `beforeEach()` is too much. For all of those times in between, there's `beforeSuite()`.
 
+[![npm](https://img.shields.io/npm/v/mocha-suite-hooks.svg)](https://npmjs.org/package/mocha-suite-hooks)
+[![npm](https://img.shields.io/npm/dt/mocha-suite-hooks)](https://www.npmjs.com/package/mocha-suite-hooks)
+[![npm](https://img.shields.io/npm/l/mocha-suite-hooks)](https://github.com/owenfarrell/mocha-suite-hooks/blob/master/LICENSE)
+
 [![CI Build](https://github.com/owenfarrell/mocha-suite-hooks/workflows/Test/badge.svg)](https://github.com/owenfarrell/mocha-suite-hooks/actions?query=event%3Apush+branch%3Amaster)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=owenfarrell_mocha-suite-hooks&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=mocha-suite-hooks)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/owenfarrell/mocha-suite-hooks.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/owenfarrell/mocha-suite-hooks/alerts/)
