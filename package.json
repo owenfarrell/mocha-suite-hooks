@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "debug": "./node_modules/.bin/mocha --no-timeouts",
-    "test": "./node_modules/.bin/mocha"
+    "test": "nyc --reporter=html mocha"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   "homepage": "https://github.com/owenfarrell/mocha-suite-hooks#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1"
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0"
   }
 }
