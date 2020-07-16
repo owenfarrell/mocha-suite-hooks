@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "debug": "./node_modules/.bin/mocha --no-timeouts",
-    "test": "nyc --reporter=html mocha"
+    "test": "nyc mocha"
   },
   "repository": {
     "type": "git",
