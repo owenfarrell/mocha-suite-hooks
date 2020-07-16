@@ -2,6 +2,11 @@
 
 Sometimes, `before()` isn't enough and `beforeEach()` is too much. For all of those times in between, there's `beforeSuite()`.
 
+[![CI Build](https://github.com/owenfarrell/mocha-suite-hooks/workflows/Test/badge.svg)](https://github.com/owenfarrell/mocha-suite-hooks/actions?query=event%3Apush+branch%3Amaster)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=owenfarrell_mocha-suite-hooks&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=mocha-suite-hooks)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/owenfarrell/mocha-suite-hooks.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/owenfarrell/mocha-suite-hooks/alerts/)
+[![Known Vulnerabilities](https://snyk.io/test/github/owenfarrell/mocha-suite-hooks/badge.svg)](https://snyk.io/test/github/owenfarrell/mocha-suite-hooks)
+
 ### Setup
 
 ```sh
