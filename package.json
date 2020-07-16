@@ -1,6 +1,6 @@
 {
   "name": "mocha-suite-hooks",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Suite-level hooks for Mocha",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
