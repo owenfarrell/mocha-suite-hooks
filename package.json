@@ -2,8 +2,8 @@
   "name": "mocha-suite-hooks",
   "version": "0.0.1",
   "description": "Suite-level hooks for Mocha",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "debug": "./node_modules/.bin/mocha --no-timeouts",
     "test": "./node_modules/.bin/mocha"

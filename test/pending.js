@@ -1,4 +1,4 @@
-const { afterSuite, beforeSuite } = require('../src')
+const { afterSuite, beforeSuite } = require('../lib')
 const { expect } = require('chai')
 
 const orderOfHooks = []
