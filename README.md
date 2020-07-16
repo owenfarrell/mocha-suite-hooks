@@ -12,6 +12,43 @@ Then simply run mocha with `--require mocha-suite-hooks`.
 
 ### Examples
 
+#### beforeSuite
+
+The `beforeSuite` method will execute at the beginning of each immediate child suite. The `beforeSuite` method will be invoked before any/all `before` hooks defined within the suite.
+
+```js
+describe('Create Article', function() {
+  beforeSuite(function() {
+      console.log('NAVIGATE TO eCOMMERCE SITE');
+      // Automate web browser navigation
+  });
+
+  context('When searching for an item by a known name', () => {
+    before(function() {
+        console.log("SEARCHING BY NAME");
+        // Automate web browser navigation
+    });
+
+    it('should not fail');
+    it('should return some results');
+  });
+
+  context('When searching for an item by an unknown SKU', () => {
+    before(function() {
+        console.log("SEARCHING BY SKU");
+        // Automate web browser navigation
+    });
+
+    it('should fail');
+    it('should not return any results');
+  });
+});
+```
+
+#### afterSuite
+
+The `afterSuite` method will execute at the conclusion of each immediate child suite. The `afterSuite` method will be invoked after any/all `after` hooks defined within the suite.
+
 ```js
 describe('Create Article', function() {
   afterSuite(function() {
