@@ -12,14 +12,10 @@ exports.beforeSuite = function (title, fn) {
 }
 
 exports.afterSuite = function (title, fn) {
-    after(function () {
+    before(function () {
         let suites = this.test.parent.suites || []
         suites.forEach(s => {
-            if (s.pending === false) {
-                s.afterAll(title, fn)
-                let hook = s._afterAll.pop()
-                s._afterAll.unshift(hook)
-            }
+            s.afterAll(title, fn)
         })
     })
 }
