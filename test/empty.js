@@ -1,10 +1,10 @@
-const { afterSuite, beforeSuite } = require('../lib')
+const { afterEachSuite, afterSuite, beforeEachSuite, beforeSuite } = require('../lib')
 const { expect } = require('chai')
-
-const orderOfHooks = []
 
 describe('a test suite with no suites defined', function () {
     describe('beforeSuite/afterSuite', function () {
+        const orderOfHooks = []
+
         context('when the suite is executed', function () {
             beforeSuite(function () {
                 orderOfHooks.push('beforeSuite')
@@ -20,6 +20,29 @@ describe('a test suite with no suites defined', function () {
 
         context('after the suite completes', function () {
             it('does not invoke afterSuite', function () {
+                expect(orderOfHooks).to.be.empty
+            })
+        })
+    })
+
+    describe('beforeEachSuite/afterEachSuite', function () {
+        const orderOfHooks = []
+
+        context('when the suite is executed', function () {
+            beforeEachSuite(function () {
+                orderOfHooks.push('beforeEachSuite')
+            })
+            afterEachSuite(function () {
+                orderOfHooks.push('afterEachSuite')
+            })
+
+            it('does not invoke beforeSuite', function () {
+                expect(orderOfHooks).to.be.empty
+            })
+        })
+
+        context('after the suite completes', function () {
+            it('does not invoke afterEachSuite', function () {
                 expect(orderOfHooks).to.be.empty
             })
         })
